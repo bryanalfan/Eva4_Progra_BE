@@ -1,0 +1,23 @@
+[
+    {"model": "incidencias.categoria", "pk": 1, "fields": {"nombre": "Aventura", "descripcion": "Actividades y recorridos de aventura", "habilitado": true, "created_at": "2026-10-23T00:00:00Z", "updated_at": "2026-10-23T00:00:00Z"}},
+    {"model": "incidencias.categoria", "pk": 2, "fields": {"nombre": "Cultural", "descripcion": "Historia, patrimonio y cultura local", "habilitado": true, "created_at": "2026-10-23T00:00:00Z", "updated_at": "2026-10-23T00:00:00Z"}},
+    {"model": "incidencias.categoria", "pk": 3, "fields": {"nombre": "Naturaleza", "descripcion": "Paisajes, parques y vida silvestre", "habilitado": true, "created_at": "2026-10-23T00:00:00Z", "updated_at": "2026-10-23T00:00:00Z"}},
+
+    {"model": "incidencias.destino", "pk": 1, "fields": {"nombre": "Torres del Paine", "ciudad": "Puerto Natales", "pais": "Chile", "descripcion": "Parque nacional de montañas, glaciares y lagos patagónicos.", "mejor_epoca": "Octubre a abril", "habilitado": true, "created_at": "2026-10-23T00:00:00Z", "updated_at": "2026-10-23T00:00:00Z"}},
+    {"model": "incidencias.destino", "pk": 2, "fields": {"nombre": "San Pedro de Atacama", "ciudad": "San Pedro de Atacama", "pais": "Chile", "descripcion": "Destino desértico conocido por sus salares, géiseres y cielos despejados.", "mejor_epoca": "Marzo a diciembre", "habilitado": true, "created_at": "2026-10-23T00:00:00Z", "updated_at": "2026-10-23T00:00:00Z"}},
+    {"model": "incidencias.destino", "pk": 3, "fields": {"nombre": "Machu Picchu", "ciudad": "Cusco", "pais": "Perú", "descripcion": "Ciudadela inca y patrimonio histórico rodeado de montañas.", "mejor_epoca": "Abril a octubre", "habilitado": true, "created_at": "2026-10-23T00:00:00Z", "updated_at": "2026-10-23T00:00:00Z"}},
+
+    {"model": "incidencias.viajero", "pk": 1, "fields": {"nombre": "Ana Pérez", "correo": "ana.perez@ejemplo.cl", "telefono": "+56911111111", "nacionalidad": "Chilena", "created_at": "2026-10-23T00:00:00Z", "updated_at": "2026-10-23T00:00:00Z"}},
+    {"model": "incidencias.viajero", "pk": 2, "fields": {"nombre": "Diego Soto", "correo": "diego.soto@ejemplo.cl", "telefono": "+56922222222", "nacionalidad": "Chileno", "created_at": "2026-10-23T00:00:00Z", "updated_at": "2026-10-23T00:00:00Z"}},
+    {"model": "incidencias.viajero", "pk": 3, "fields": {"nombre": "Camila Rojas", "correo": "camila.rojas@ejemplo.cl", "telefono": "", "nacionalidad": "Argentina", "created_at": "2026-10-23T00:00:00Z", "updated_at": "2026-10-23T00:00:00Z"}},
+
+    {"model": "incidencias.paqueteturistico", "pk": 1, "fields": {"nombre": "Aventura Patagonia", "descripcion": "Ruta guiada por los principales senderos y miradores del parque.", "destino": 1, "categoria": 1, "precio": "795000.00", "duracion_dias": 5, "max_personas": 8, "habilitado": true, "created_at": "2026-10-23T00:00:00Z", "updated_at": "2026-10-23T00:00:00Z"}},
+    {"model": "incidencias.paqueteturistico", "pk": 2, "fields": {"nombre": "Desierto y estrellas", "descripcion": "Explora el Valle de la Luna, los géiseres del Tatio y el cielo atacameño.", "destino": 2, "categoria": 3, "precio": "425000.00", "duracion_dias": 4, "max_personas": 10, "habilitado": true, "created_at": "2026-10-23T00:00:00Z", "updated_at": "2026-10-23T00:00:00Z"}},
+    {"model": "incidencias.paqueteturistico", "pk": 3, "fields": {"nombre": "Historia del Cusco", "descripcion": "Visita guiada por la ciudad histórica y Machu Picchu.", "destino": 3, "categoria": 2, "precio": "980000.00", "duracion_dias": 6, "max_personas": 6, "habilitado": true, "created_at": "2026-10-23T00:00:00Z", "updated_at": "2026-10-23T00:00:00Z"}},
+
+    {"model": "incidencias.reserva", "pk": 1, "fields": {"viajero": 1, "paquete": 1, "fecha_inicio": "2027-01-15", "cantidad_personas": 2, "precio_total": "1590000.00", "estado": "confirmada", "created_at": "2026-10-23T09:00:00Z", "updated_at": "2026-10-23T09:00:00Z"}},
+    {"model": "incidencias.reserva", "pk": 2, "fields": {"viajero": 2, "paquete": 2, "fecha_inicio": "2027-02-05", "cantidad_personas": 1, "precio_total": "425000.00", "estado": "pendiente", "created_at": "2026-10-23T10:00:00Z", "updated_at": "2026-10-23T10:00:00Z"}},
+
+    {"model": "incidencias.resena", "pk": 1, "fields": {"destino": 1, "viajero": 2, "puntuacion": 5, "comentario": "Paisajes increíbles y una organización excelente.", "created_at": "2026-10-23T10:30:00Z", "updated_at": "2026-10-23T10:30:00Z"}},
+    {"model": "incidencias.resena", "pk": 2, "fields": {"destino": 2, "viajero": 1, "puntuacion": 4, "comentario": "Una experiencia inolvidable bajo las estrellas.", "created_at": "2026-10-23T11:00:00Z", "updated_at": "2026-10-23T11:00:00Z"}}
+]

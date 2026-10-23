@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block titulo %}Descubre tu próximo viaje | ViajaChile{% endblock %}
+
+{% block estilos %}
+<style>
+    .estado { padding: 12px; border-radius: 8px; background: #e0f2fe; }
+    .datos { line-height: 1.8; }
+</style>
+{% endblock %}
+
+{% block contenido %}
+<h1>Tu próxima aventura comienza aquí</h1>
+<p>Explora destinos, encuentra experiencias y gestiona tus reservas con nuestra API de viajes y turismo.</p>
+
+<section class="datos">
+    <h2>Explora nuestra oferta</h2>
+    <p>Destinos disponibles: <strong>{{ cantidad_destinos }}</strong></p>
+    <p>Paquetes turísticos: <strong>{{ cantidad_paquetes }}</strong></p>
+    <p>Reservas confirmadas: <strong>{{ reservas_confirmadas }}</strong></p>
+</section>
+
+<p class="estado">Consulta y administra destinos, paquetes, viajeros, reservas y reseñas.</p>
+<p><small>Consulta realizada: {{ fecha_consulta }}</small></p>
+
+<a class="boton" href="/api/">Explorar la API REST</a>
+{% endblock %}
